@@ -10,13 +10,13 @@ var PromptContainer = React.createClass({
       username: ''
     }
   },
-  handleUpdateUser: function(e) {
+  handleUpdateUser: function(event) {
     this.setState({
-      username: e.target.value
+      username: event.target.value
     })
   },
-  handleSubmitUser: function(e) {
-    e.preventDefault();
+  handleSubmitUser: function(event) {
+    event.preventDefault();
     var username = this.state.username;
     this.setState({
       username: ''
