@@ -42,4 +42,5 @@ var ConfirmBattleContainer = React.createClass ({
 
 });
 
+
 module.exports = ConfirmBattleContainer;
