@@ -1,17 +1,18 @@
-var React = require('react');
-var PropTypes = React.PropTypes;
-var styles = require('../styles');
-var Link = require('react-router').Link;
-var UserDetails = require('./UserDetails');
-var UserDetailsWrapper = require('./UserDetailsWrapper');
-var MainContainer = require('./MainContainer');
+const React = require('react');
+const PropTypes = React.PropTypes;
+const styles = require('../styles');
+const Link = require('react-router').Link;
+const UserDetails = require('./UserDetails');
+const UserDetailsWrapper = require('./UserDetailsWrapper');
+const MainContainer = require('./MainContainer');
+const Loading = require('./Loading');
 
 
 // Stateless Functional Component
 // notice the Conditional operator that asks if props.isLoading true then render LOADING, otherwise render the rest
 function ConfirmBattle(props) {
   return props.isLoading === true
-    ? <p> LOADING... </p>
+    ? <Loading speed={200} text='Getting Players'/>
     : <MainContainer>
         <h1>Confirm Players</h1>
         <div className="col-sm-8 col-sm-offset-2">
@@ -36,9 +37,9 @@ function ConfirmBattle(props) {
 }
 
 ConfirmBattle.propTypes = {
-  isLoading: PropTypes.bool.isRequired,
-  onInitiateBattle: PropTypes.func.isRequired,
-  playersInfo: PropTypes.array.isRequired
+    isLoading: PropTypes.bool.isRequired
+  , onInitiateBattle: PropTypes.func.isRequired
+  , playersInfo: PropTypes.array.isRequired
 }
 
 module.exports = ConfirmBattle;

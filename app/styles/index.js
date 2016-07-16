@@ -1,9 +1,9 @@
-var styles = {
+const styles = {
   transparentBg: {
     background: 'transparent'
   },
   space: {
-    marginTop: '25'
+    marginTop: '25px'
   }
 };
 

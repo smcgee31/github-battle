@@ -1,5 +1,5 @@
-var React = require('react');
-var PropTypes = React.PropTypes;
+const React = require('react');
+const PropTypes = React.PropTypes;
 
 function UserDetailsWrapper (props) {
   return (

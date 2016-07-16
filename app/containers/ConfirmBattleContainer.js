@@ -1,8 +1,8 @@
-var React = require('react');
-var ConfirmBattle = require('../components/ConfirmBattle');
-var githubHelpers = require('../utils/githubHelpers');
+const React = require('react');
+const ConfirmBattle = require('../components/ConfirmBattle');
+const githubHelpers = require('../utils/githubHelpers');
 
-var ConfirmBattleContainer = React.createClass ({
+const ConfirmBattleContainer = React.createClass ({
   contextTypes: {
     router: React.PropTypes.object.isRequired
   },
@@ -13,7 +13,7 @@ var ConfirmBattleContainer = React.createClass ({
     }
   },
   componentDidMount: function() {
-    var query = this.props.location.query;
+    let query = this.props.location.query;
     githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo])
     .then(function (players) {
       this.setState({

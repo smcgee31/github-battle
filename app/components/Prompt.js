@@ -1,6 +1,6 @@
-var React = require('react');
-var PropTypes = React.PropTypes;
-var transparentBg = require('../styles').transparentBg;
+const React = require('react');
+const PropTypes = React.PropTypes;
+const transparentBg = require('../styles').transparentBg;
 
 // functional stateless components
 function Prompt (props) {
@@ -24,10 +24,10 @@ function Prompt (props) {
 
 Prompt.PropTypes = {
   propTypes: {
-    header: PropTypes.string.isRequired,
-    onUpdateUser: PropTypes.func.isRequired,
-    onSubmitUser: PropTypes.func.isRequired,
-    username: PropTypes.string.isRequired
+      header: PropTypes.string.isRequired
+    , onUpdateUser: PropTypes.func.isRequired
+    , onSubmitUser: PropTypes.func.isRequired
+    , username: PropTypes.string.isRequired
   }
 }
 

@@ -1,8 +1,8 @@
-var axios = require('axios');
+const axios = require('axios');
 
-var id = 'YOUR_CLIENT_ID';
-var sec = "YOUR_SECRET_ID";
-var param = '?client_id=' + id + '&client_secret=' + sec;
+const id = 'YOUR_CLIENT_ID';
+const sec = "YOUR_SECRET_ID";
+const param = '?client_id=' + id + '&client_secret=' + sec;
 
 function getUserInfo(username) {
   return axios.get('https://api.github.com/users/' + username + param);
@@ -41,7 +41,7 @@ function calculateScores(players) {
   ];
 }
 
-var helpers = {
+let helpers = {
   getPlayersInfo: function (players) {
     return axios.all(players.map(function (username) {
       return getUserInfo(username);
@@ -54,8 +54,8 @@ var helpers = {
     });
   },
   battle: function (players) {
-    var playerOneData = getPlayersData(players[0]);
-    var playerTwoData = getPlayersData(players[1]);
+    let playerOneData = getPlayersData(players[0]);
+    let playerTwoData = getPlayersData(players[1]);
 
     return axios.all([playerOneData, playerTwoData])
       .then(calculateScores)

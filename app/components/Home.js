@@ -1,10 +1,10 @@
-var React = require('react');
-var ReactRouter = require('react-router');
-var Link = ReactRouter.Link;
-var MainContainer = require('./MainContainer');
+const React = require('react');
+const ReactRouter = require('react-router');
+const Link = ReactRouter.Link;
+const MainContainer = require('./MainContainer');
 
 
-var Home = React.createClass ({
+const Home = React.createClass ({
   render: function() {
     return (
       <MainContainer>

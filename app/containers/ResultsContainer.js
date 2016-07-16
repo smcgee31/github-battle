@@ -1,8 +1,8 @@
-var React = require('react');
-var Results = require('../components/Results');
-var githubHelpers = require('../utils/githubHelpers');
+const React = require('react');
+const Results = require('../components/Results');
+const githubHelpers = require('../utils/githubHelpers');
 
-var ResultsContainer = React.createClass ({
+const ResultsContainer = React.createClass ({
   getInitialState: function () {
     return {
       isLoading: true,
