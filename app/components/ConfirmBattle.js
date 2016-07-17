@@ -1,11 +1,11 @@
-const React = require('react');
+import React from 'react';
 const PropTypes = React.PropTypes;
-const styles = require('../styles');
-const Link = require('react-router').Link;
-const UserDetails = require('./UserDetails');
-const UserDetailsWrapper = require('./UserDetailsWrapper');
-const MainContainer = require('./MainContainer');
-const Loading = require('./Loading');
+import styles from '../styles';
+import {ReactRouter, Link} from 'react-router';
+import UserDetails from './UserDetails';
+import UserDetailsWrapper from './UserDetailsWrapper';
+import MainContainer from './MainContainer';
+import Loading from './Loading';
 
 
 // Stateless Functional Component

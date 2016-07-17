@@ -1,5 +1,5 @@
-const React = require('react');
-const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 require('../main.css');
 
 const Main = React.createClass ({

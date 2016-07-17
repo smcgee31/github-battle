@@ -1,6 +1,7 @@
-const React = require('react');
+import React from 'react';
 const PropTypes = React.PropTypes;
-const transparentBg = require('../styles').transparentBg;
+import styles from '../styles';
+const transparentBg = styles.transparentBg;
 
 // functional stateless components
 function Prompt (props) {

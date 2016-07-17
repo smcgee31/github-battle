@@ -1,5 +1,5 @@
-const React = require('react');
-const styles = require('../styles');
+import React from 'react';
+import styles from '../styles';
 
 function MainContainer(props) {
   return (

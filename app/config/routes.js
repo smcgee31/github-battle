@@ -1,14 +1,14 @@
-const React = require('react');
+import React from 'react';
 const ReactRouter = require('react-router');
 const Router = ReactRouter.Router;
 const Route = ReactRouter.Route;
 const IndexRoute = ReactRouter.IndexRoute;
 const hashHistory = ReactRouter.hashHistory;
-const Main = require('../components/Main');
-const Home = require('../components/Home');
-const PromptContainer = require('../containers/PromptContainer');
-const ConfirmBattleContainer = require('../containers/ConfirmBattleContainer');
-const ResultsContainer = require('../containers/ResultsContainer');
+import Main from '../components/Main';
+import Home from '../components/Home';
+import PromptContainer from '../containers/PromptContainer';
+import ConfirmBattleContainer from '../containers/ConfirmBattleContainer';
+import ResultsContainer from '../containers/ResultsContainer';
 
 const routes = (
   <Router history={hashHistory}>

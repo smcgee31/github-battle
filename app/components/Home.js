@@ -1,7 +1,6 @@
-const React = require('react');
-const ReactRouter = require('react-router');
-const Link = ReactRouter.Link;
-const MainContainer = require('./MainContainer');
+import React from 'react';
+import {ReactRouter, Link} from 'react-router';
+import MainContainer from './MainContainer';
 
 
 const Home = React.createClass ({

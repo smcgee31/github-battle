@@ -1,6 +1,6 @@
-const React = require('react');
-const Results = require('../components/Results');
-const githubHelpers = require('../utils/githubHelpers');
+import React from 'react';
+import Results from '../components/Results';
+import githubHelpers from '../utils/githubHelpers';
 
 const ResultsContainer = React.createClass ({
   getInitialState: function () {
