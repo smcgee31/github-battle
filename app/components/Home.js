@@ -1,18 +1,18 @@
 import React from 'react';
 import {ReactRouter, Link} from 'react-router';
-import MainContainer from './MainContainer';
+import HomeWrapper from './HomeWrapper';
 
 
 const Home = React.createClass ({
   render: function() {
     return (
-      <MainContainer>
+      <HomeWrapper>
         <h1>Github Battle</h1>
         <p className="lead">Let's DO THIS!</p>
         <Link to='/playerOne'>
           <button className="btn btn-lg btn-success" type="button">Get Started</button>
         </Link>
-      </MainContainer>
+      </HomeWrapper>
     )
   }
 });
@@ -23,12 +23,12 @@ module.exports = Home;
 //
 // function Home () {
 //   return (
-//     <MainContainer>
+//     <HomeWrapper>
 //       <h1>Github Battle</h1>
 //       <p className="lead">Let's DO THIS!</p>
 //       <Link to='/playerOne'>
 //         <button className="btn btn-lg btn-success" type="button">Get Started</button>
 //       </Link>
-//     </MainContainer>
+//     </HomeWrapper>
 //   )
 // }

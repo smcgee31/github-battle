@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles';
 
-function MainContainer(props) {
+function HomeWrapper(props) {
   return (
     <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
       {props.children}
@@ -9,4 +9,4 @@ function MainContainer(props) {
   )
 };
 
-module.exports = MainContainer;
+module.exports = HomeWrapper;

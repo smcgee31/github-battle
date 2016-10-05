@@ -8,8 +8,8 @@ const Main = React.createClass ({
       <div className='main-container'>
       <ReactCSSTransitionGroup
         transitionName='appear'
-        transitionEnterTimeout={500}
-        transitionLeaveTimeout={500}>
+        transitionEnterTimeout={300}
+        transitionLeaveTimeout={300}>
           {React.cloneElement(this.props.children, {key: this.props.location.pathname})}
       </ReactCSSTransitionGroup>
       </div>
